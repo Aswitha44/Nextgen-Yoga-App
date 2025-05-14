@@ -25,12 +25,11 @@ A Python-based project that recommends yoga poses using Firestore vector search 
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate
-```
-3. Install dependencies:
 
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
-   ```
+   
 4. Start the app:
 
    ```bash
@@ -40,6 +39,7 @@ Visit `http://localhost:8080` in your browser.
 
 ## Output Images
 ![Screenshot 2025-05-14 001812](https://github.com/user-attachments/assets/788ca667-5e13-4640-a3c2-4adc60d10069)
+
 ![Screenshot 2025-05-14 001929](https://github.com/user-attachments/assets/7d2cae9b-ec00-4400-bd23-2c2a36711b22)
 
 
