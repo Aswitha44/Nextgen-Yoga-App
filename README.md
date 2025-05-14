@@ -1,19 +1,45 @@
-# Yoga pose recommender
-A Flask Web Application that demonstrates how to do Vector Search on a Yoga Poses database in Firestore. 
+## Nextgen-Yoga-App
+A Python-based project that recommends yoga poses using Firestore vector search and Gemini-generated context. Built to explore AI-powered search and Google Cloud tools.
+## Features
 
-The application is a step by step demonstration of the following:
-1. Utilize an existing Hugging Face Dataset of Yoga poses (JSON format).
-2. Enhance the dataset with an additional field `description` that uses Gemini to generate descriptions for each of the poses.
-3. Use Langchain to create a Document, use Firestore Langchain integration to create the collection in Firestore.
-4. Create a composite index in Firestore to allow for Vector search.
-5. Utilize the Vector Search in a Flask Application that brings everything together as shown below:
+- Search yoga poses by text prompt  
+- Vector similarity matching using Firestore  
+- Gemini-generated descriptions for each pose  
+- Simple web UI (Flask)  
+- Optional TTS audio generation for poses  
+- Deployable to Google Cloud Run  
 
-<img title="a title" alt="Alt text" src="/images/screenshot.png">
+## Tech Stack
 
-## Technologies used:
-1. Python + Flask Framework
-2. Google Cloud : Firestore, Cloud Run, Gemini in Vertex AI
-3. Langchain Python framework
+- Python  
+- Google Firestore (with vector support)  
+- LangChain + Gemini (LLM)  
+- Flask (web backend)  
+- Text-to-Speech (Google Cloud)  
+- Google Cloud Run (deployment)  
 
-## Codelab
-Step by Step instructions to understand and run/deploy this application is available in this [codelab](https://codelabs.developers.google.com/yoga-pose-firestore-vectorsearch-python?hl=en#0).
+## How to Run Locally
+
+1. Clone the repo  
+2. Set up and activate virtual environment:  
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+```
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Start the app:
+
+   ```bash
+   python main.py
+   ```
+Visit `http://localhost:8080` in your browser.
+
+## Output Images
+![Screenshot 2025-05-14 001812](https://github.com/user-attachments/assets/788ca667-5e13-4640-a3c2-4adc60d10069)
+![Screenshot 2025-05-14 001929](https://github.com/user-attachments/assets/7d2cae9b-ec00-4400-bd23-2c2a36711b22)
+
+
